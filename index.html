@@ -10,19 +10,26 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
         <!-- <h1>Hello World! we are developers</h1> -->
-    
+        <main id="main-section">
+          <div id="titles">
         <h1>freeCodeCamp Survey Form</h1>
         <p>Thank you for taking the time to help us improve the platform</p>
-        <section id="form-section">
+        <br>
+      </div>
+          <section id="form-section">
           <form id="survey-form">
+            <div id="survey-id">
             <label for="fname">Name:</label><br>
-            <input type="text" id="user-name" name="user-name" value="Enter your name"><br>
-            <label for="fname">e mail:</label><br>
-            <input type="email" id="email" name="email" value="Enter your email"><br>
+            
+            <input type="text" id="user-name" name="user-name" placeholder="Enter your name"><br>
+            <label for="fname">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
             <label for="fname">Age:</label><br>
-            <input type="number" id="age" name="age" value="Enter your age" min="6" max="120"><br>
-            <label for="cars">Choose a car:</label>
-            <select id="role" name="role">
+            <input type="number" id="number" name="age" placeholder="Enter your age" min="6" max="120"><br>
+            <label for="cars">Which option best describes your current role?</label>
+            <br>
+            <select id="dropdown" name="role">
+              <option value="chone">Choose One</option>
               <option value="student">Student</option>
               <option value="ftj">Full time job</option>
               <option value="ftl">Full time learner</option>
@@ -31,21 +38,67 @@
             </select>
             <br>
             <label for="reco">Would you recommend freeCodeCamp to a friend?</label><br>
-            <input type="radio" id="def" name="reco" value="definitely">
+            <input type="radio" id="rad" name="reco" value="definitely">
             <label for="def">Definitely</label><br>
-            <input type="radio" id="maybe" name="reco" value="maybe">
+            <input type="radio" id="rad" name="reco" value="maybe">
             <label for="maybe">Maybe</label><br>
-            <input type="radio" id="ns" name="reco" value="notsure">
+            <input type="radio" id="rad" name="reco" value="notsure">
             <label for="notsure">Not sure</label>
             <br>
+            <label for="cars">What is your favorite feature of freeCodeCamp?</label>
+            <br>
             <select id="feature" name="feature">
+              <option value="chone">Choose One</option>
               <option value="ch">Challenges</option>
               <option value="Pj">Projects</option>
               <option value="Cmty">Community</option>
               <option value="OS">Open Source</option>
             </select>
+            <br>
+            <label for="si">What would you like to see improved? (Check all that apply)</label><br>
+            <div class="input-label-pair">
+            <label class="input-label-pair" for="fepj"><input type="checkbox" id="checkbox" name="fepj" value="fepj"/>Front-end projects</label>
+            </div>
+            <br>
+            <div class="input-label-pair">
+            <label class="input-label-pair" for="bepj"><input type="checkbox" id="checkbox" name="bepj" value="bepj"/>Back-end projects</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label class="input-label-pair" for="dv"><input type="checkbox" id="checkbox" name="dv" value="dv"/>Data visualization</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label class="input-label-pair" for="ch"><input type="checkbox" id="checkbox" name="ch" value="ch"/>Challenges</label><br>
+          </div>
+            <div class="input-label-pair">
+            <label class="input-label-pair" for="oscmty"><input type="checkbox" id="checkbox" name="oscmty" value="oscmty"/>Open Source Community</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label class="input-label-pair" for="ghr"><input type="checkbox" id="checkbox" name="ghr" value="ghr"/>Gitter help rooms</label><br>
+          </div>
+            <label class="input-label-pair" for="vid"><input type="checkbox" id="checkbox" name="vid" value="vid"/>Videos</label><br>
+            <div class="input-label-pair">
+            <label class="input-label-pair" for="cmt"><input type="checkbox" id="checkbox" name="cmt" value="cmt"/>City meet ups</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label class="input-label-pair" for="wiki"><input type="checkbox" id="checkbox" name="wiki" value="wiki"/>Wiki</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label class="input-label-pair" for="forum"><input type="checkbox" id="checkbox" name="forum" value="forum"/>Forum</label><br>
+          </div>
+          <div class="input-label-pair">
+            <label for="ar"><input type="checkbox" id="checkbox" name="ar" value="ar"/>Additional Courses</label><br>
+          </div>
+          <br>
+            <label for="ar">Any comments or suggestions?</label><br>
+            <textarea name="message" rows="4" placeholder="Enter your comment here...">
+              
+            </textarea>
+            <br>
+            <button id="submit">Submit</button>
+          </div>
           </form>
         </section>
+        </main>
   </body>
   
 </html>
